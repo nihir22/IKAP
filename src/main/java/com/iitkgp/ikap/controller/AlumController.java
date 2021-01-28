@@ -31,7 +31,7 @@ public class AlumController {
 //        alumService.insAlum(alum.getAlum_fname(), alum.getAlum_mname(), alum.getAlum_lname(), alum.getAlum_roll(), alum.getAlum_dob(),alum.getAlum_gender(), alum.getAlum_passingyear(), alum.getAlum_email());
 //        model.addAttribute("alum", alum);
 //        session.setAttribute("userName", alum.getAlum_roll());
-//        return "user.jsp";
+//        return "profile.jsp";
 //    }
 //    @RequestMapping("login")
 //    public String login(Alum alum, HttpSession session, Model model) {
@@ -40,7 +40,7 @@ public class AlumController {
 //            alum = alumService.selByRoll(alum.getAlum_roll());
 //            model.addAttribute("alum", alum);
 //            session.setAttribute("userName", alum.getAlum_roll());
-//            return "main.jsp";
+//            return "home.jsp";
 //        }
 //        model.addAttribute("error", "You are not registered with the portal. Please Register to continue...");
 //        return "redirect:register.jsp";
@@ -62,10 +62,10 @@ public class AlumController {
 //            alumService.updMaritialStatus(alum.getAlum_roll(), alum.getAlum_maritialstatus());
 //            model.addAttribute("alum", alumService.selByRoll(alum.getAlum_roll()));
 //            model.addAttribute("success", "����ɹ�");
-//            return "user.jsp";
+//            return "profile.jsp";
 //        } catch (Exception e) {
 //            model.addAttribute("error", "����ʧ��");
-//            return "user.jsp";
+//            return "profile.jsp";
 //        }
 //    }
 //
