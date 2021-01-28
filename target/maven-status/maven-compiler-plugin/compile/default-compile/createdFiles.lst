@@ -1,0 +1,9 @@
+com\iitkgp\ikap\controller\RegisterController.class
+com\iitkgp\ikap\service\AlumService.class
+com\iitkgp\ikap\controller\LoginController.class
+com\iitkgp\ikap\controller\AlumController.class
+com\iitkgp\ikap\controller\ProfileController.class
+com\iitkgp\ikap\controller\UpdController.class
+com\iitkgp\ikap\mapper\AlumMapper.class
+com\iitkgp\ikap\domain\Alum.class
+com\iitkgp\ikap\service\impl\AlumServiceImpl.class
