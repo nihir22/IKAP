@@ -7,12 +7,10 @@ package com.iitkgp.ikap.controller;
 
 import com.iitkgp.ikap.domain.Alum;
 import com.iitkgp.ikap.service.AlumService;
-import java.util.List;
 import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  *
@@ -26,49 +24,7 @@ public class AlumController {
     @Resource
     private AlumService alumService;
 
-//    @RequestMapping("register")
-//    public String register(Alum alum, Model model, HttpSession session) {
-//        alumService.insAlum(alum.getAlum_fname(), alum.getAlum_mname(), alum.getAlum_lname(), alum.getAlum_roll(), alum.getAlum_dob(),alum.getAlum_gender(), alum.getAlum_passingyear(), alum.getAlum_email());
-//        model.addAttribute("alum", alum);
-//        session.setAttribute("userName", alum.getAlum_roll());
-//        return "profile.jsp";
-//    }
-//    @RequestMapping("login")
-//    public String login(Alum alum, HttpSession session, Model model) {
-//        Object right = alumService.validateAlum(alum.getAlum_roll(), alum.getAlum_dob());
-//        if (right != null) {
-//            alum = alumService.selByRoll(alum.getAlum_roll());
-//            model.addAttribute("alum", alum);
-//            session.setAttribute("userName", alum.getAlum_roll());
-//            return "home.jsp";
-//        }
-//        model.addAttribute("error", "You are not registered with the portal. Please Register to continue...");
-//        return "redirect:register.jsp";
-//    }
-//    @RequestMapping("updAll")
-//    public String updAll(Alum alum, Model model) {
-//        try {
-//            alumService.updFirstName(alum.getAlum_roll(), alum.getAlum_fname());
-//            alumService.updMiddleName(alum.getAlum_roll(), alum.getAlum_mname());
-//            alumService.updLastName(alum.getAlum_roll(), alum.getAlum_lname());
-//            alumService.updDOB(alum.getAlum_roll(), alum.getAlum_dob());
-//            alumService.updGender(alum.getAlum_roll(), alum.getAlum_gender());
-//            alumService.updDegree(alum.getAlum_roll(), alum.getAlum_degree());
-//            alumService.updDepartment(alum.getAlum_roll(), alum.getAlum_dep());
-//            alumService.updPassingYear(alum.getAlum_roll(), alum.getAlum_passingyear());
-//            alumService.updHall(alum.getAlum_roll(), alum.getAlum_hall());
-//            alumService.updContact(alum.getAlum_roll(), alum.getAlum_contact());
-//            alumService.updEmail(alum.getAlum_roll(), alum.getAlum_email());
-//            alumService.updMaritialStatus(alum.getAlum_roll(), alum.getAlum_maritialstatus());
-//            model.addAttribute("alum", alumService.selByRoll(alum.getAlum_roll()));
-//            model.addAttribute("success", "����ɹ�");
-//            return "profile.jsp";
-//        } catch (Exception e) {
-//            model.addAttribute("error", "����ʧ��");
-//            return "profile.jsp";
-//        }
-//    }
-//
+
     @RequestMapping("toMain")
     public String toMain(String alum_roll, Model model) {
         alum = alumService.selByRoll(alum_roll);
@@ -82,10 +38,6 @@ public class AlumController {
         return "profile.jsp";
     }
 
-//    @RequestMapping("selAllName")
-//    @ResponseBody
-//    public List<String> selAllName() {
-//        return alumService.selAllRoll();
-//    }
+
 
 }

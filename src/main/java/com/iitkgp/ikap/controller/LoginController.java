@@ -7,12 +7,7 @@ package com.iitkgp.ikap.controller;
 
 import com.iitkgp.ikap.domain.Alum;
 import com.iitkgp.ikap.service.AlumService;
-import java.io.IOException;
 import javax.annotation.Resource;
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
